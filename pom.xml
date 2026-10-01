@@ -16,7 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>25</maven.compiler.release>
     <junit.version>4.13.2</junit.version>
-    <jackson.version>2.18.9</jackson.version>
+    <jackson.version>2.18.11</jackson.version>
+    <netty.version>4.1.138.Final</netty.version>
     <azure.storage.blob.version>12.35.0</azure.storage.blob.version>
     <azure.storage.file.datalake.version>12.28.0</azure.storage.file.datalake.version>
     <maven.plugin.compiler.version>3.8.0</maven.plugin.compiler.version>
@@ -36,6 +37,13 @@
         <groupId>com.fasterxml.jackson</groupId>
         <artifactId>jackson-bom</artifactId>
         <version>${jackson.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-bom</artifactId>
+        <version>${netty.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
